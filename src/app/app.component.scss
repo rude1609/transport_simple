@@ -1,0 +1,140 @@
+.main-body-css {
+    min-height: 80vh;
+    padding: 50px;
+    overflow-x: auto;
+}
+
+::ng-deep.circle-css {
+    width: 15px;
+    z-index: 1;
+    margin: 13px;
+}
+
+::ng-deep.circle-css::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 45px;
+    border: 2px solid green;
+    background: white;
+}
+
+::ng-deep.line-with-circle {
+    width: 200px;
+    height: 0;
+    border: 2px solid #C4C4C4;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    margin-right: 35px;
+}
+
+::ng-deep.line-with-circle::after {
+    content: "";
+    transform: translateX(249%);
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 45px;
+    border: 2px solid green;
+    background: white;
+}
+
+::ng-deep.line-with-arrow {
+    width: 200px;
+    height: 0;
+    border: 2px solid #C4C4C4;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+::ng-deep.arrow-with-circle {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 21px solid blue;
+    position: relative;
+    margin-right: 8px;
+}
+
+::ng-deep.arrow-with-circle::after {
+    content: "";
+    transform: translate(-11px, -7px);
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 45px;
+    border: 2px solid green;
+    background: white;
+    margin-left: 7px;
+}
+
+::ng-deep.path-body-css {
+    min-height: 65vh;
+    margin-top: 50px;
+}
+
+::ng-deep.level-chaneg-span-up {
+    width: 110px;
+    position: relative;
+    top: -42px;
+    left: -21px;
+}
+
+::ng-deep.level-chaneg-span-down {
+    width: 110px;
+    position: relative;
+    top: -41px;
+    left: -24px;
+}
+
+::ng-deep.shift-to-level-1 {
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
+
+::ng-deep.shift-to-level-2 {
+    position: relative;
+    top: -82px;
+    left: 2px;
+}
+
+::ng-deep.circle-namesis {
+    position: absolute;
+    width: max-content;
+}
+
+::ng-deep.without-arrow-namesis {
+    position: absolute;
+    width: max-content;
+    right: -30px;
+    top: 7px;
+}
+
+::ng-deep.arrow-namesis {
+    position: absolute;
+    width: max-content;
+    right: -5px;
+    top: 7px;
+}
+
+::ng-deep.level-up-namesis {
+    position: absolute;
+    width: max-content;
+    top: 9px;
+    left: -28px;
+}
+
+::ng-deep.level-down-namesis {
+    position: absolute;
+    width: max-content;
+    bottom: -22px;
+    right: -24px;
+}
