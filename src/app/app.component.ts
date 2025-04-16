@@ -21,7 +21,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.loadConfig();
   }
-  //<path d="M10 90 C 30 90, 70 10, 90 10" stroke="#f5b041" fill="transparent" stroke-width="2"></path
 
   addNewTrip() {
     if (!this.addedTrips) {
